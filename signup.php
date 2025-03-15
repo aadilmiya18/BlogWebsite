@@ -20,7 +20,7 @@
         </div>
         <div class="input-box">
             <i class="fas fa-envelope"></i>
-            <input name="useremail" type="text" placeholder="Enter your email" required>
+            <input name="useremail" type="email" placeholder="Enter your email" required>
         </div>
         <div class="input-box">
             <i class="fas fa-lock"></i>

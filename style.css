@@ -7,7 +7,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  height: 100vh;
   margin: 0;
   background-color:black;
 }
@@ -58,6 +57,7 @@ h4 {
 .create-post {
   background-color: #4caf50;
   padding: 5px 15px;
+  padding-top: 20px;
   border-radius: 4px;
 }
 
@@ -182,13 +182,14 @@ h4 {
 }
 .container {
   position: relative;
-  margin-top: 200px;
+  margin-top: 120px;
   max-width: 850px;
   width: 100%;
   background: #fff;
   padding: 40px 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   perspective: 2700px;
+  border-radius: 5%;
 }
 .container .cover {
   position: absolute;
@@ -201,9 +202,13 @@ h4 {
   transform-origin: left;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  border-radius: 5%;
+
 }
 .container #flip:checked ~ .cover {
   transform: rotateY(-180deg);
+  border-radius: 5%;
+
 }
 .container #flip:checked ~ .forms .login-form {
   pointer-events: none;
@@ -215,9 +220,11 @@ h4 {
   left: 0;
   height: 100%;
   width: 100%;
+  border-radius: 5%;
 }
 .cover .back {
   transform: rotateY(180deg);
+  
 }
 .container .cover img {
   position: absolute;
@@ -225,6 +232,8 @@ h4 {
   width: 100%;
   object-fit: cover;
   z-index: 10;
+  border-radius: 5%;
+
 }
 .container .cover .text {
   position: absolute;
@@ -235,6 +244,8 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 5%;
+
 }
 .container .cover .text::before {
   content: "";
@@ -243,6 +254,8 @@ h4 {
   width: 100%;
   opacity: 0.5;
   background: #7d2ae8;
+  border-radius: 5%;
+
 }
 .cover .text .text-1,
 .cover .text .text-2 {
@@ -251,6 +264,7 @@ h4 {
   font-weight: 600;
   color: #fff;
   text-align: center;
+  
 }
 .cover .text .text-2 {
   font-size: 15px;
